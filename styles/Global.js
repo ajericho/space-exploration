@@ -1,18 +1,14 @@
 import { createGlobalStyle } from 'styled-components'
 
-import imgDesktop from '../assets/home/background-home-desktop.jpg'
-
-const img = `url('${imgDesktop}')`;
 
 export const GlobalStyles = createGlobalStyle` 
     html,
     body {
         background-color: #0B0D17;
-        background-image:${img};
         color:#fff;
         padding: 0;
         margin: 0;
-        font-family: 'Barlow Condensed', sans-serif;
+        font-family: 'Barlow', sans-serif;
 
     }
 
@@ -43,6 +39,7 @@ export const GlobalStyles = createGlobalStyle`
         font-size:150px;
         text-transform:uppercase;
         font-weight:400;
+        margin:0;
     }
 
     h2 {
@@ -72,6 +69,9 @@ export const GlobalStyles = createGlobalStyle`
         letter-spacing:4.75px;
         text-transform:uppercase;
         font-weight:400;
+        margin:20px 0px;
+
+        color:${props => props.theme.colors.lilac};
     }
 
     .sub-heading-a {
@@ -84,7 +84,7 @@ export const GlobalStyles = createGlobalStyle`
     .sub-heading-b {
         font-family: 'Barlow Condensed', sans-serif;
         font-size: 14px;    
-        letter-spacing:2.35;
+        letter-spacing:2.35px;
         text-transform:uppercase;
         font-weight:400;
     }
@@ -92,9 +92,17 @@ export const GlobalStyles = createGlobalStyle`
     .nav-text {
         font-family: 'Barlow Condensed', sans-serif;
         font-size: 16px;    
-        letter-spacing:2.7;  
+        letter-spacing:2.7px;  
         text-transform:uppercase;
-        font-weight:400;
+        font-weight:300;
+    }
+
+    p {
+        font-family: 'Barlow', sans-serif;
+        font-size:18px;
+        color:${props => props.theme.colors.lilac};
+        font-weight:300;
+        line-height:2;   
     }
 
     

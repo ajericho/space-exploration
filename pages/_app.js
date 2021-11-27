@@ -1,4 +1,4 @@
-import { useWindowSize } from '../hooks/useWindowSize';
+
 import { ThemeProvider } from 'styled-components'
 import { theme } from '../styles/Theme'
 import { GlobalStyles } from '../styles/Global'
@@ -6,30 +6,20 @@ import { GlobalStyles } from '../styles/Global'
 import { Wrapper, Layout } from '../components/Styles/Wrapper'
 
 import Head from 'next/head'
-
 import Image from 'next/image'
+import {useRouter} from 'next/router';
 
-import imgDesktop from '../assets/home/background-home-desktop.jpg'
-import imgTablet from '../assets/home/background-home-tablet.jpg'
-import imgMobile from '../assets/home/background-home-mobile.jpg'
+
+import { useWindowSize } from '../helper/useWindowSize';
+import { findImage } from '../helper/findImage';
 
 
 function MyApp({ Component, pageProps }) {
 
+  //Find the device size, router, and set background image
   const deviceSize = useWindowSize();
-
-  function findImage() {
-    if (deviceSize.width < '769') {
-      return imgMobile
-
-    } else if
-      (deviceSize.width > '768' && deviceSize.width <= '1024') {
-       return  imgTablet
-    }
-    else {
-      return imgDesktop
-    }
-  }
+  const router  = useRouter();
+  const backgroundImage = findImage({deviceSize, router});
 
 
   return (
@@ -47,7 +37,7 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <Image
             className="desktopImg"
-            src={findImage()}
+            src={backgroundImage}
             alt="BackgroundImage"
             layout={'fill'}
             objectFit="cover"

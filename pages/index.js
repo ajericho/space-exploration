@@ -7,7 +7,7 @@ export default function Home() {
 
   return (
 
-    <div >
+    < >
       <Layout>
         <HomeHero>
           <div className="greeting">
@@ -24,7 +24,7 @@ export default function Home() {
       </Layout>
       <footer>
       </footer>
-    </div>
+    </>
 
   )
 }

@@ -40,6 +40,9 @@ export const GlobalStyles = createGlobalStyle`
         text-transform:uppercase;
         font-weight:400;
         margin:0;
+        @media (max-width: ${props => props.theme.device.mobile}) {
+            font-size:80px;
+        }
     }
 
     h2 {
@@ -68,10 +71,13 @@ export const GlobalStyles = createGlobalStyle`
         font-size: 28px;
         letter-spacing:4.75px;
         text-transform:uppercase;
-        font-weight:400;
+        font-weight:300;
         margin:20px 0px;
-
         color:${props => props.theme.colors.lilac};
+        @media (max-width: ${props => props.theme.device.mobile}) {
+            font-size:16px;
+
+        }
     }
 
     .sub-heading-a {
@@ -102,7 +108,7 @@ export const GlobalStyles = createGlobalStyle`
         font-size:18px;
         color:${props => props.theme.colors.lilac};
         font-weight:300;
-        line-height:2;   
+        line-height:1.7;   
     }
 
     

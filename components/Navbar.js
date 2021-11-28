@@ -35,10 +35,12 @@ export default function Navbar() {
     return (
 
         <NavBarStyles >
-            <Image src={logo} width={48} height={48} layout='fixed' objectFit='cover' />
+            <div className="image-container">
+                <Image src={logo} width={48} height={48} layout='fixed' objectFit='cover' />
+            </div>
             <div className="line"></div>
             <GlassContainer>
-                 <HorizontalList links={pages} />
+                <HorizontalList links={pages} />
             </GlassContainer>
         </NavBarStyles>
 

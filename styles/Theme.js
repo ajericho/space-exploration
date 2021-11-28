@@ -6,9 +6,8 @@ export const theme = {
         darkBlue: '#0B0D17',
     },
     device: {
-        mobile: `screen and (max-width: '620px')`,
-        tablet: 'min-width: 800px',
-        desktop: 'min-width: 1320px'
+        mobile: '768px',
+        tablet: '1024px'
       }
     }
   

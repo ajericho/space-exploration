@@ -8,11 +8,13 @@ import { imageLoader } from "../helper/imageLoader";
 
 import data from '../data.json';
 import { PlanetStats, PlanetTabs } from "../components/PageStyles/DestinationStyles";
+import { useWindowSize } from '../helper/useWindowSize'
 
 
 
 export default function Destination() {
   const destinations = data.destinations;
+  const device = useWindowSize();
 
   return (
 
@@ -56,8 +58,15 @@ export default function Destination() {
                     loader={imageLoader}
                     src={planet.images.webp}
                     alt={planet.name}
-                    width={445}
-                    height={445}
+                    width={
+                      device.width >= 1024 ?
+                      455 : 
+                      177
+                    }
+                    height={
+                      device.width >= 1024 ? 
+                      445 : 170
+                    }
                     layout={'intrinsic'}
                   />
 

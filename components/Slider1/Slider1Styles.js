@@ -38,6 +38,15 @@ export const CrewImage = styled.div`
 
         }
 
+      @media (max-width: ${props => props.theme.device.mobile}) {
+        position:inherit;
+        height:280px;
+        width:331px;
+      //  bottom:80px;
+        order:1;
+
+        }
+
 `   
 
 export const CrewDetails = styled.div`
@@ -53,6 +62,8 @@ export const CrewDetails = styled.div`
     @media (max-width: ${props => props.theme.device.tablet}) {
         margin-top:0;
         }
-
+        @media (max-width: ${props => props.theme.device.mobile}) {
+        order:2;
+        }
 
 `   

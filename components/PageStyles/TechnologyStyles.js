@@ -23,7 +23,9 @@ export const TechnologyContainer = styled.div`
          flex-direction:column;
 
         }
-
+        @media (max-width: ${props => props.theme.device.mobile}) {
+        margin-top:-200px;
+        }    
          
 `  
 
@@ -35,15 +37,15 @@ export const TechImage = styled.div`
    top:230px;
    left:auto;
    bottom:auto;
-   z-index:100;
+   z-index:10;
 
    @media (max-width: ${props => props.theme.device.tablet}) {
         min-height:310px;
         width:100%;
-        top:0;
-        display:absolute;
+        top:130px;
+        display:relative;
         overflow:hidden;
-        }
+        } 
          
 `   
 
@@ -61,5 +63,6 @@ export const TechDetails = styled.div`
     @media (max-width: ${props => props.theme.device.tablet}) {
         margin-top:0;
         }
+
 
 `   

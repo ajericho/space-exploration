@@ -57,6 +57,15 @@ export const GlobalStyles = createGlobalStyle`
         font-size:56px;
         text-transform:uppercase;
         font-weight:400;
+        @media (max-width: ${props => props.theme.device.tablet}) {
+
+            font-size:40px;
+        }
+        @media (max-width: ${props => props.theme.device.mobile}) {
+
+            font-size:24px;
+
+            }      
     }
 
     h4 {
@@ -64,7 +73,16 @@ export const GlobalStyles = createGlobalStyle`
         font-size: 32px;
         text-transform:uppercase;
         font-weight:400;
-    }
+        @media (max-width: ${props => props.theme.device.tablet}) {
+
+            font-size:24px;
+            }
+            @media (max-width: ${props => props.theme.device.mobile}) {
+
+            font-size:16px;
+
+            }    
+                }
 
     h5 {
         font-family: 'Barlow Condensed', sans-serif;

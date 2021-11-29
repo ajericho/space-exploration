@@ -5,6 +5,14 @@ export const SliderTabs = styled.div`
 
       h4 {
          margin:0;
+         @media (max-width: ${props => props.theme.device.tablet}) {
+               font-size:24px;
+
+        }
+         @media (max-width: ${props => props.theme.device.mobile}) {
+               font-size:16px;
+
+        }
       }
 
       .slider-dot {
@@ -21,6 +29,15 @@ export const SliderTabs = styled.div`
             @media (max-width: ${props => props.theme.device.tablet}) {         
                display:inline-block;
                margin:10px 20px;
+               height:60px;
+               width:60px;
+               z-index:15;
+
+        }
+        @media (max-width: ${props => props.theme.device.mobile}) {
+               margin-top:50px;
+               height:40px;
+               width:40px;
 
         }
          }

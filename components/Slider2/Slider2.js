@@ -66,8 +66,16 @@ export default function Slider1({tech}) {
                       item.images.landscape 
                     }
                     alt={item.name}
-                    width={512}
-                    height={530}
+                    width={
+                      device.width >= 1024 ?
+                      512 : 
+                      370
+                      }
+                    height={
+                      device.width >= 1024 ?
+                      530 : 
+                      170
+                    }
                     layout={'responsive'}
                     objectFit={'contain'}
                   />

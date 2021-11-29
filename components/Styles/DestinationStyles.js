@@ -34,5 +34,9 @@ export const PlanetStats = styled.div`
     .white {
         color:#fff;
     }
+    @media (max-width: ${props => props.theme.device.tablet}) {
+      text-align:center;
+
+        }
     
 `   

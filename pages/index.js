@@ -1,6 +1,8 @@
 import { HomeHero } from "../components/Styles/HomeHeroStyles";
 import { MainButton } from "../components/Styles/MainButton";
-import { Layout } from "../components/Styles/Wrapper";
+import { Layout } from "../components/Styles/LayoutStyles";
+
+import Link from 'next/link'
 
 
 export default function Home() {
@@ -16,9 +18,11 @@ export default function Home() {
             <p>Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!</p>
           </div>
           <div className="explore">
-            <MainButton>
-              Explore
-            </MainButton>
+            <Link href="/destination">
+              <MainButton>
+                Explore
+              </MainButton>
+            </Link>
           </div>
         </HomeHero>
       </Layout>

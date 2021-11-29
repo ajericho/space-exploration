@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 import PageHeading from "../components/PageHeading";
-import { Layout, PageContent } from '../components/Styles/Wrapper';
+import { Layout, PageContent } from '../components/Styles/LayoutStyles';
 import { Tab } from '@headlessui/react'
 
 import Image from 'next/image'
@@ -58,6 +58,7 @@ export default function Destination() {
                     alt={planet.name}
                     width={445}
                     height={445}
+                    layout={'intrinsic'}
                   />
 
                 </div>
@@ -69,18 +70,18 @@ export default function Destination() {
                   <PlanetStats>
                     <div class="distance">
                       <h5 className="sub-heading-b">
-                          Avg. Distance
-                        </h5>
+                        Avg. Distance
+                      </h5>
                       <h5 className="white">{planet.distance}</h5>
                     </div>
                     <div class="distance">
-                    <h5 className="sub-heading-b">
-                          Est. Time Travel
-                        </h5>
-                    <h5 className="white">{planet.travel}</h5>
+                      <h5 className="sub-heading-b">
+                        Est. Time Travel
+                      </h5>
+                      <h5 className="white">{planet.travel}</h5>
                     </div>
 
-             
+
                   </PlanetStats>
                 </div>
 

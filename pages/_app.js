@@ -3,7 +3,7 @@ import { ThemeProvider } from 'styled-components'
 import { theme } from '../styles/Theme'
 import { GlobalStyles } from '../styles/Global'
 
-import { Wrapper } from '../components/Styles/Wrapper'
+import { Wrapper } from '../components/Styles/LayoutStyles'
 
 import Head from 'next/head'
 import Image from 'next/image'

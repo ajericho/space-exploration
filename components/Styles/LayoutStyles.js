@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 
-
 export const Wrapper = styled.main` 
     position:fixed;
     width:100vw;
@@ -25,9 +24,14 @@ export const Layout = styled.div`
 `
 export const PageContent = styled.div`
    display:flex;
-
    div {
-       flex:1;
+     flex:1;
    }
+
+   @media (max-width: ${props => props.theme.device.tablet}) {
+        flex-direction: column;
+        align-items:center;
+        text-align:center;
+        }
 
 `

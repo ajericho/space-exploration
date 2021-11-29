@@ -17,7 +17,7 @@ export default function Slider1({ crew }) {
             <Tab.Panels>
 
                 {crew.map(member => (
-                    <Tab.Panel>
+                    <Tab.Panel key={member.name}>
                             <PageContent>
                                 <CrewDetails flex="2" >
                                     <h4>{member.role}</h4>

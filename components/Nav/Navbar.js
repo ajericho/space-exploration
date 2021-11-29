@@ -40,21 +40,21 @@ export default function Navbar() {
 
         <NavBarStyles >
             <div className="image-container">
-                <Image src={logo} width={48} height={48} layout='fixed' objectFit='cover' />
+                <Image alt='Space Tourism Logo' src={logo} width={48} height={48} layout='fixed' objectFit='cover' />
             </div>
             <div className="line"></div>
             <ToggleButton>
                 <button
                     className={isOpen ? 'hide' : 'show'}
                     onClick={() => setIsOpen(true)}>
-                    <Image src={menu} width={19} height={19} layout='fixed' objectFit='cover' />
+                    <Image alt='Open menu' src={menu} width={19} height={19} layout='fixed' objectFit='cover' />
                 </button>
             </ToggleButton>
             <ToggleButton>
                 <button
                     className={isOpen ? 'show' : 'hide'}
                     onClick={() => setIsOpen(false)}>
-                    <Image src={close} width={19} height={19} layout='fixed' objectFit='cover' />
+                    <Image   alt='Close menu' src={close} width={19} height={19} layout='fixed' objectFit='cover' />
                 </button>
 
             </ToggleButton>

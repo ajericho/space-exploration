@@ -50,10 +50,10 @@ export default function Destination() {
         <Tab.Panels>
 
           {destinations.map(planet => (
-            <Tab.Panel>
+            <Tab.Panel key={planet.name}>
               <PageContent>
 
-                <div class="">
+                <div >
                   <Image
                     loader={imageLoader}
                     src={planet.images.webp}
@@ -72,18 +72,18 @@ export default function Destination() {
 
                 </div>
                 <div>
-                  <h1 class="">
+                  <h1 >
                     {planet.name}
                   </h1>
                   <p>{planet.description}</p>
                   <PlanetStats>
-                    <div class="distance">
+                    <div className="distance">
                       <h5 className="sub-heading-b">
                         Avg. Distance
                       </h5>
                       <h5 className="white">{planet.distance}</h5>
                     </div>
-                    <div class="distance">
+                    <div className="distance">
                       <h5 className="sub-heading-b">
                         Est. Time Travel
                       </h5>

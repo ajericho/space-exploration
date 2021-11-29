@@ -24,7 +24,7 @@ export default function Slider1({tech}) {
     <SliderTabs className='controls'>
         <Tab.List>
           {tech.map((menuItem, menuIdx) => (
-            <Tab as={Fragment}>
+            <Tab as={Fragment} key={member.name}>
               {({ selected }) => (
      
                 <button
@@ -46,7 +46,7 @@ export default function Slider1({tech}) {
         <Tab.Panels>
 
           {tech.map(item => (
-            <Tab.Panel>
+            <Tab.Panel key={member.name}>
               <PageContent>
 
                 <TechDetails>

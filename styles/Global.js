@@ -93,6 +93,7 @@ export const GlobalStyles = createGlobalStyle`
         letter-spacing:2.35px;
         text-transform:uppercase;
         font-weight:400;
+
     }
 
     .nav-text {

@@ -37,3 +37,4 @@ export const HorizontalListStyle = styled.nav`
         font-weight:700;
     }
 `
+

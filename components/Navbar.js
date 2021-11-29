@@ -2,7 +2,7 @@ import { NavBarStyles, GlassContainer } from "./Styles/NavbarStyles";
 
 import Image from 'next/image'
 
-import logo from '../assets/shared/logo.svg'
+import logo from '../public/assets/shared/logo.svg'
 import HorizontalList from "./HorizontalList";
 
 

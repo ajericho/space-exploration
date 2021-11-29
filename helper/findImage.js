@@ -1,19 +1,19 @@
 
-import imgHomeDesktop from '../assets/home/background-home-desktop.jpg'
-import imgHomeTablet from '../assets/home/background-home-tablet.jpg'
-import imgHomeMobile from '../assets/home/background-home-mobile.jpg'
+import imgHomeDesktop from '../public/assets/home/background-home-desktop.jpg'
+import imgHomeTablet from '../public/assets/home/background-home-tablet.jpg'
+import imgHomeMobile from '../public/assets/home/background-home-mobile.jpg'
 
-import imgDestinationDesktop from '../assets/destination/background-destination-desktop.jpg'
-import imgDestinationTablet from '../assets/destination/background-destination-tablet.jpg'
-import imgDestinationMobile from '../assets/destination/background-destination-mobile.jpg'
+import imgDestinationDesktop from '../public/assets/destination/background-destination-desktop.jpg'
+import imgDestinationTablet from '../public/assets/destination/background-destination-tablet.jpg'
+import imgDestinationMobile from '../public/assets/destination/background-destination-mobile.jpg'
 
-import imgCaseDesktop from '../assets/crew/background-crew-desktop.jpg'
-import imgCaseTablet from '../assets/crew/background-crew-tablet.jpg'
-import imgCaseMobile from '../assets/crew/background-crew-mobile.jpg'
+import imgCaseDesktop from '../public/assets/crew/background-crew-desktop.jpg'
+import imgCaseTablet from '../public/assets/crew/background-crew-tablet.jpg'
+import imgCaseMobile from '../public/assets/crew/background-crew-mobile.jpg'
 
-import imgTechDesktop from '../assets/technology/background-technology-desktop.jpg'
-import imgTechTablet from '../assets/technology/background-technology-tablet.jpg'
-import imgTechMobile from '../assets/technology/background-technology-mobile.jpg'
+import imgTechDesktop from '../public/assets/technology/background-technology-desktop.jpg'
+import imgTechTablet from '../public/assets/technology/background-technology-tablet.jpg'
+import imgTechMobile from '../public/assets/technology/background-technology-mobile.jpg'
 
 
 export function findImage({ deviceSize, router }) {

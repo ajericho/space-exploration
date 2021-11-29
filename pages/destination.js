@@ -30,7 +30,7 @@ export default function Destination() {
             <PlanetTabs>
               <Tab.List>
                 {destinations.map(planet => (
-                  <Tab as={Fragment}>
+                  <Tab as={Fragment}  key={planet.name}>
                     {({ selected }) => (
                       <a
                         className={

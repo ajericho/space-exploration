@@ -11,6 +11,7 @@ export const CrewTabs = styled.div`
             opacity:.17;
             border:0;
             margin-right:20px;
+            transition:ease-in-out .2s all;
          }
 
          .slider-dot.active {

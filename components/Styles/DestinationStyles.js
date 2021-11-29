@@ -8,10 +8,10 @@ margin-bottom:40px;
 a {
    padding:10px 0;
    margin:0 25px 0 0;
-
    border-bottom:3px solid transparent;
    transition:ease-in-out .2s border-bottom;
    display:inline-block;
+   transition:ease-in-out .2s all;
 }
 
 a:hover {

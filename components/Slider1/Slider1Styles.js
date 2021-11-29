@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const CrewTabs = styled.div`
+export const SliderTabs = styled.div`
       margin-top:-150px;
 
       .slider-dot {

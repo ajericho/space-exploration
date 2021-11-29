@@ -1,6 +1,6 @@
-import { HomeHero } from "../components/Styles/HomeHeroStyles";
-import { MainButton } from "../components/Styles/MainButton";
-import { Layout } from "../components/Styles/LayoutStyles";
+import { HomeHero } from "../components/PageStyles/HomeHeroStyles";
+import { MainButton } from "../components/Buttons/MainButton";
+import { Layout } from "../components/PageStyles/LayoutStyles";
 
 import Link from 'next/link'
 

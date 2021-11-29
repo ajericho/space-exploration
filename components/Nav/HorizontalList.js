@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { HorizontalListStyle } from './Styles/HorizontalListStyles'
+import { HorizontalListStyle } from './HorizontalListStyles'
 
 
 export default function HorizontalList({ links }) {

@@ -3,7 +3,7 @@ import { ThemeProvider } from 'styled-components'
 import { theme } from '../styles/Theme'
 import { GlobalStyles } from '../styles/Global'
 
-import { Wrapper } from '../components/Styles/LayoutStyles'
+import { Wrapper } from '../components/PageStyles/LayoutStyles'
 
 import Head from 'next/head'
 import Image from 'next/image'
@@ -11,7 +11,7 @@ import { useRouter } from 'next/router';
 
 import { useWindowSize } from '../helper/useWindowSize';
 import { findImage } from '../helper/findImage';
-import Navbar from '../components/Navbar'
+import Navbar from '../components/Nav/Navbar';
 import { favicon } from '../public/assets/favicon-32x32.png'
 
 

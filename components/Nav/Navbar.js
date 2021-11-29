@@ -1,8 +1,8 @@
-import { NavBarStyles, GlassContainer } from "./Styles/NavbarStyles";
+import { NavBarStyles, GlassContainer } from "./NavbarStyles";
 
 import Image from 'next/image'
 
-import logo from '../public/assets/shared/logo.svg'
+import logo from '../../public/assets/shared/logo.svg'
 import HorizontalList from "./HorizontalList";
 
 

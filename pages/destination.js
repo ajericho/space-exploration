@@ -1,13 +1,13 @@
 import { Fragment } from "react";
-import PageHeading from "../components/PageHeading";
-import { Layout, PageContent } from '../components/Styles/LayoutStyles';
+import PageHeading from "../components/PageHeading/PageHeading";
+import { Layout, PageContent } from '../components/PageStyles/LayoutStyles';
 import { Tab } from '@headlessui/react'
 
 import Image from 'next/image'
 import { imageLoader } from "../helper/imageLoader";
 
 import data from '../data.json';
-import { PlanetStats, PlanetTabs } from "../components/Styles/DestinationStyles";
+import { PlanetStats, PlanetTabs } from "../components/PageStyles/DestinationStyles";
 
 
 

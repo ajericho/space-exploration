@@ -1,4 +1,4 @@
-import { PageHeadingStyle } from "./Styles/PageHeadingStyles";
+import { PageHeadingStyle } from "./PageHeadingStyles";
 
 
 export default function PageHeading({pageNumber, pageTitle}) {

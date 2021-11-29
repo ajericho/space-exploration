@@ -2,7 +2,6 @@ import styled from 'styled-components'
 
 export const SliderTabs = styled.div`
       margin-top:-150px;
-
       .slider-dot {
             height:15px;
             width:15px;
@@ -24,12 +23,21 @@ export const SliderTabs = styled.div`
             opacity:.5;
             cursor:pointer;
          }
+       @media (max-width: ${props => props.theme.device.tablet}) {
+        margin-top:0px;
+        }
 `
 
 export const CrewImage = styled.div`
     display:block;
+    @media (max-width: ${props => props.theme.device.tablet}) {
+        position:absolute;
+        height:500px;
+        width:450px;
+        bottom:20px;
 
-         
+        }
+
 `   
 
 export const CrewDetails = styled.div`
@@ -42,6 +50,9 @@ export const CrewDetails = styled.div`
       margin-bottom:20px;
     }
 
+    @media (max-width: ${props => props.theme.device.tablet}) {
+        margin-top:0;
+        }
 
 
 `   

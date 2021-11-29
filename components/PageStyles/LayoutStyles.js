@@ -10,7 +10,6 @@ export const Wrapper = styled.main`
 
     @media (max-width: ${props => props.theme.device.tablet}) {
         height:calc(100vh);
-
         }
     
 `
@@ -20,6 +19,10 @@ export const Layout = styled.div`
     height:70%;
     margin:auto;
     padding:0 25px;
+    @media (max-width: ${props => props.theme.device.tablet}) {
+        margin-top:100px;
+
+        }
 
 `
 

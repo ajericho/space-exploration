@@ -22,8 +22,16 @@ export const Layout = styled.div`
     padding:0 25px;
 
 `
+
+export const LayoutMin = styled.div`
+    max-width:1150px;
+    margin:auto;
+    padding:0 25px;
+
+`
 export const PageContent = styled.div`
    display:flex;
+   align-items:center;;
    div {
      flex:1;
    }

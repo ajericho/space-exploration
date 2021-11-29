@@ -5,14 +5,17 @@ import { Tab } from '@headlessui/react'
 
 import Image from 'next/image'
 import { imageLoader } from "../helper/imageLoader";
+import { useWindowSize } from '../helper/useWindowSize';
+
 
 import data from '../data.json';
-import { TechnologyContainer, CrewTabs, CrewImage, CrewDetails } from "../components/Styles/TechnologyStyles";
+import { TechnologyContainer, TechTabs, TechImage, TechDetails } from "../components/Styles/TechnologyStyles";
 
 
 
 export default function Technology() {
   const tech = data.technology;
+  const device = useWindowSize();
 
   return (
 
@@ -23,10 +26,11 @@ export default function Technology() {
       />
 
       <Tab.Group>
+        
         <TechnologyContainer>
-        <CrewTabs className='controls'>
+        <TechTabs className='controls'>
             <Tab.List>
-              {tech.map(menuItem => (
+              {tech.map((menuItem, menuIdx) => (
                 <Tab as={Fragment}>
                   {({ selected }) => (
          
@@ -35,7 +39,7 @@ export default function Technology() {
                         selected ? 'active slider-dot' : 'slider-dot'
                       }
                     >
-                     <h4>1</h4>
+                     <h4>{menuIdx + 1}</h4>
                       <span className="sr-only">{menuItem.name}</span>
 
                     </button>
@@ -44,7 +48,7 @@ export default function Technology() {
                 </Tab>
               ))}
             </Tab.List>
-          </CrewTabs>
+          </TechTabs>
           <div>
             <Tab.Panels>
 
@@ -52,28 +56,31 @@ export default function Technology() {
                 <Tab.Panel>
                   <PageContent>
 
-
-
-                    <CrewDetails>
+                    <TechDetails>
                       <h5 className="sub-heading-b">The Terminology...</h5>
                       <h3 >
                         {item.name}
                       </h3>
                       <p>{item.description}</p>
+                      {console.log(device)}
 
-                    </CrewDetails>
-                    <CrewImage>
+                    </TechDetails>
+                    <TechImage>
                       <Image
                         loader={imageLoader}
-                        src={item.images.portrait}
+                        src={ 
+                          device.width >= 1024 ?
+                          item.images.portrait : 
+                          item.images.landscape 
+                        }
                         alt={item.name}
-                        width={600}
-                        height={700}
+                        width={512}
+                        height={530}
                         layout={'responsive'}
                         objectFit={'contain'}
                       />
 
-                    </CrewImage>
+                    </TechImage>
                   </PageContent>
                 </Tab.Panel>
               ))}

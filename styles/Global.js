@@ -109,7 +109,7 @@ export const GlobalStyles = createGlobalStyle`
         font-size:18px;
         color:${props => props.theme.colors.lilac};
         font-weight:300;
-        line-height:1.7;   
+        line-height:1.9;   
     }
 
     

@@ -33,6 +33,7 @@ export const CrewImage = styled.div`
 `   
 
 export const CrewDetails = styled.div`
+   margin-top:-100px;
    h3 {
       margin:20px 0;
    }

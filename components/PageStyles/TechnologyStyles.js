@@ -4,6 +4,7 @@ import styled from 'styled-components'
 export const TechnologyContainer = styled.div`
   display: flex;
   align-items:center;
+  flex-wrap:wrap;
 
   div {
      flex:4;

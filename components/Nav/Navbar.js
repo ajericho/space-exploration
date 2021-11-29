@@ -59,7 +59,7 @@ export default function Navbar() {
 
             </ToggleButton>
 
-            <GlassContainer show={isOpen} >
+            <GlassContainer  show={isOpen} >
                 <HorizontalList links={pages} />
             </GlassContainer>
         </NavBarStyles>

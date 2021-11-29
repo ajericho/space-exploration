@@ -23,7 +23,7 @@ export const NavBarStyles = styled.div`
     .image-container {
         flex:shrink;
         min-width:120px;
-        @media (max-width: ${props => props.theme.device.tablet}) {
+        @media (max-width: ${props => props.theme.device.mobile}) {
             position:fixed;
             left:30px;
             top:30px;
